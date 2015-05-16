@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie-scm
+FROM markusma/nginx-etcdregister:1.5.13
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \
@@ -21,3 +21,4 @@ ENV PATH /go/bin:$PATH
 WORKDIR /go
 
 COPY go-wrapper /usr/local/bin/
+COPY config/etc/confd /etc/confd

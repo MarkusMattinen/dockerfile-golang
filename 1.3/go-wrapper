@@ -84,7 +84,7 @@ case "$cmd" in
 		;;
 		
 	run)
-		set -x; exec "$goBin" "$@"
+		set -x; APP_BINARY="$goBin" APP_ARGS="$@" exec /init
 		;;
 		
 	*)
