@@ -2,7 +2,7 @@ FROM markusma/supervisord:trusty
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \
-		gcc libc6-dev make \
+		gcc libc6-dev make git-core \
 		--no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
