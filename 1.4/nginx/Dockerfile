@@ -1,4 +1,4 @@
-FROM markusma/supervisord:trusty
+FROM markusma/nginx-etcdregister:1.5.13
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \

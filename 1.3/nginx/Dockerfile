@@ -1,4 +1,4 @@
-FROM markusma/supervisord:trusty
+FROM markusma/nginx-etcdregister:1.5.13
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \
@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
 		--no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV GOLANG_VERSION 1.4.2
+ENV GOLANG_VERSION 1.3.3
 
 RUN curl -sSL https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz \
 		| tar -v -C /usr/src -xz
