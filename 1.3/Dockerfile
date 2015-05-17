@@ -1,4 +1,4 @@
-FROM markusma/supervisord:trusty
+FROM markusma/confd:0.9
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \
