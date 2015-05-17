@@ -1,4 +1,4 @@
-FROM markusma/golang-nginx:1.4.2
+FROM markusma/golang-nginx:1.4
 
 RUN mkdir -p /go/src/app
 WORKDIR /go/src/app
