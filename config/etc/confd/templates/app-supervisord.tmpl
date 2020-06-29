@@ -1,5 +1,0 @@
-[program:app]
-command={{ getenv "APP_BINARY" }} {{ getenv "APP_ARGS" }}
-stopsignal=TERM
-redirect_stderr=true
-autorestart=true

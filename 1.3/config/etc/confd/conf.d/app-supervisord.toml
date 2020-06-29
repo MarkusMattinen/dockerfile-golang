@@ -1,3 +1,0 @@
-[template]
-src = "app-supervisord.tmpl"
-dest = "/etc/supervisor/conf.d/app.conf"
